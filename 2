@@ -1,0 +1,11 @@
+import random
+
+def generate_random_even():
+    num = random.randint(1, 100)  # 生成1到100之间的随机整数
+    if num % 2 != 0:  # 如果生成的数是奇数，则加1使其成为偶数
+        num += 1
+    return num
+
+# 示例用法
+random_even = generate_random_even()
+print(random_even)
